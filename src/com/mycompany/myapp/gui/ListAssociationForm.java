@@ -16,7 +16,7 @@ import com.mycompany.myapp.services.ServiceAssociation;
  */
 public class ListAssociationForm extends Form{
         public ListAssociationForm(Form previous) {
-        setTitle("List association");
+        setTitle("List of associations");
         
         SpanLabel sp = new SpanLabel();
         sp.setText(ServiceAssociation.getInstance().getAllAssociations().toString());
