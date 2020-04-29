@@ -10,7 +10,6 @@ import com.codename1.ui.Command;
 import com.codename1.ui.Dialog;
 import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
-import com.codename1.ui.TextArea;
 import com.codename1.ui.TextField;
 import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.events.ActionListener;
@@ -23,13 +22,14 @@ import com.mycompany.myapp.services.ServiceAssociation;
  * @author taieb
  */
 public class AddAssociationForm extends Form {
+   
         public AddAssociationForm(Form previous) {
         setTitle("Add a new association");
         setLayout(BoxLayout.y());
         
         TextField name = new TextField("","Association Name");
         TextField description = new TextField("","Description");
-        TextField logo = new TextField ("","Logo");
+        Button logo = new Button ("Logo");
         TextField location = new TextField ("","Location");
         TextField website = new TextField ("","Website");
         Button btnValider = new Button("Add Association");

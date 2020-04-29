@@ -40,7 +40,7 @@ public class ServiceAssociation {
     }
     
     public boolean addAssociation(Association a) {
-        String url = Statics.BASE_URL + "/associations/" + a.getName() + "/" + a.getDescription() + "/" + a.getLogo() + "/" + a.getLocation() + "/" + a.getWebsite();
+        String url = Statics.BASE_URL + "/esprit/tasks/newAssociation?name=" + a.getName() + "&description=" + a.getDescription() + "&logo=" + a.getLogo() + "&location=" + a.getLocation() + "&website=" + a.getWebsite();
         req.setUrl(url);
         req.addResponseListener(new ActionListener<NetworkEvent>() {
             @Override
@@ -64,12 +64,13 @@ public class ServiceAssociation {
                 Association a = new Association();
                 float id = Float.parseFloat(obj.get("id").toString());
                 a.setId((int)id);
-                a.setDescription(obj.get("description").toString());
                 a.setName(obj.get("name").toString());
+                a.setDescription(obj.get("description").toString());
                 a.setLogo(obj.get("logo").toString());
                 a.setLocation(obj.get("location").toString());
                 a.setWebsite(obj.get("website").toString());
                 associations.add(a);
+                
             }
             
             
@@ -80,7 +81,7 @@ public class ServiceAssociation {
     }
         
             public ArrayList<Association> getAllAssociations(){
-        String url = Statics.BASE_URL+"/association/";
+        String url = Statics.BASE_URL+"/esprit/tasks/allAssociations";
         req.setUrl(url);
         req.setPost(false);
         req.addResponseListener(new ActionListener<NetworkEvent>() {
