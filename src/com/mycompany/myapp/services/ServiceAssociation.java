@@ -57,9 +57,9 @@ public class ServiceAssociation {
         try {
             associations=new ArrayList<>();
             JSONParser j = new JSONParser();
-            Map<String,Object> tasksListJson = j.parseJSON(new CharArrayReader(jsonText.toCharArray()));
+            Map<String,Object> associationsListJson = j.parseJSON(new CharArrayReader(jsonText.toCharArray()));
             
-            List<Map<String,Object>> list = (List<Map<String,Object>>)tasksListJson.get("root");
+            List<Map<String,Object>> list = (List<Map<String,Object>>)associationsListJson.get("root");
             for(Map<String,Object> obj : list){
                 Association a = new Association();
                 float id = Float.parseFloat(obj.get("id").toString());
@@ -80,7 +80,7 @@ public class ServiceAssociation {
         return associations;
     }
         
-            public ArrayList<Association> getAllAssociations(){
+    public ArrayList<Association> getAllAssociations(){
         String url = Statics.BASE_URL+"/esprit/tasks/allAssociations";
         req.setUrl(url);
         req.setPost(false);

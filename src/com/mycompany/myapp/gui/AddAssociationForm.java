@@ -34,6 +34,9 @@ public class AddAssociationForm extends Form {
         TextField website = new TextField ("","Website");
         Button btnValider = new Button("Add Association");
         
+        
+        
+        
         btnValider.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
