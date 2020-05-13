@@ -39,14 +39,13 @@ public class LoginForm extends Form{
     Button sign = new Button ("Sign up");
     
     sign.addActionListener(e-> new SignInForm(current).show());
-    String userr = username.getText();
-    String pwd = password.getText();
+   
     
     
     login.addActionListener(new ActionListener(){
     @Override
         public void actionPerformed(ActionEvent evt){
-            if (ServiceUser.getInstance().VerifUser(userr, pwd)==false){
+            if (ServiceUser.getInstance().VerifUser(username.getText(), password.getText())==false){
                 Dialog.show("","Check Username And Password",new Command("OK"));
                 new LoginForm(current).show();
             }else{
