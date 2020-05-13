@@ -13,6 +13,7 @@ import com.codename1.ui.Toolbar;
 import java.io.IOException;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.io.NetworkEvent;
+import com.mycompany.myapp.gui.LoginForm;
 import com.mycompany.myapp.gui.SignInForm;
 
 /**
@@ -48,7 +49,7 @@ public class MyApplication {
     }
     
     public void start() {
-        new SignInForm(current).show();
+        new LoginForm(current).show();
     }
 
     public void stop() {

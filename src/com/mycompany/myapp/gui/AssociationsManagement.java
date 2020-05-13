@@ -25,11 +25,11 @@ public class AssociationsManagement extends Form {
         add(new Label("Choose an option"));
         Button btnAdd = new Button("Add Association");
         Button btnList = new Button("List Associations");
-        Button btnEdit = new Button("Edit Association");
+        
         
         btnAdd.addActionListener(e-> new AddAssociationForm(current).show());
         btnList.addActionListener(e-> new ListAssociationForm(current).show());
-        addAll(btnAdd,btnList,btnEdit);
+        addAll(btnAdd,btnList);
         
         
     }

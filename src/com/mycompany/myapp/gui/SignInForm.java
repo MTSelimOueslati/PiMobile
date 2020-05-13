@@ -5,11 +5,14 @@
  */
 package com.mycompany.myapp.gui;
 
+import com.codename1.social.FacebookConnect;
+import com.codename1.social.Login;
 import com.codename1.ui.Button;
 import com.codename1.ui.Command;
 import com.codename1.ui.Dialog;
 import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
+import com.codename1.ui.TextArea;
 import com.codename1.ui.TextField;
 import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.events.ActionListener;
@@ -31,11 +34,33 @@ public class SignInForm extends Form {
         
         TextField username = new TextField("","Username");
         TextField email = new TextField("","Email");
-        TextField password = new TextField ("","Password");
-        TextField passwordconfirm = new TextField ("","Confirm Password");
+        TextField password = new TextField ("","Password",20, TextArea.PASSWORD);
+        TextField passwordconfirm = new TextField ("","Confirm Password",20, TextArea.PASSWORD);
         Button btnValider = new Button("Sign In");
+        Button facebooklogin = new Button ("Login with Facebook");
         
-        
+        facebooklogin.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                String clientId = "1654896674667347";
+                String redirectURI = "https://www.codenameone.com/";
+                String clientSecret = "27804c48ab2159991982e49a70acbf68";
+                Login fb = FacebookConnect.getInstance();
+                fb.setClientId(clientId);
+                fb.setRedirectURI(redirectURI);
+                fb.setClientSecret(clientSecret);
+                //Sets a LoginCallback listener
+                
+                //trigger the login if not already logged in
+                if(!fb.isUserLoggedIn()){
+                    fb.doLogin();
+                }else{
+                    //get the token and now you can query the facebook API
+                    String token = fb.getAccessToken().getToken();
+                    
+                }
+            }
+        });
         
         
         btnValider.addActionListener(new ActionListener() {
@@ -64,7 +89,7 @@ public class SignInForm extends Form {
             }
         });
         
-        addAll(username,email,password,passwordconfirm,btnValider);
+        addAll(username,email,password,passwordconfirm,btnValider,facebooklogin);
         getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK, e-> previous.showBack());
                 
     }
