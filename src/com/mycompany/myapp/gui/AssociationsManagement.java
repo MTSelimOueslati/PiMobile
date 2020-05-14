@@ -6,6 +6,7 @@
 package com.mycompany.myapp.gui;
 
 import com.codename1.ui.Button;
+import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
 import com.codename1.ui.Label;
 import com.codename1.ui.layouts.BoxLayout;
@@ -25,10 +26,10 @@ public class AssociationsManagement extends Form {
         add(new Label("Choose an option"));
         Button btnAdd = new Button("Add Association");
         Button btnList = new Button("List Associations");
-        
-        
+
         btnAdd.addActionListener(e-> new AddAssociationForm(current).show());
         btnList.addActionListener(e-> new ListAssociationForm(current).show());
+        getToolbar().addMaterialCommandToRightBar("", FontImage.MATERIAL_LOGOUT, e-> new LoginForm(current).show());
         addAll(btnAdd,btnList);
         
         

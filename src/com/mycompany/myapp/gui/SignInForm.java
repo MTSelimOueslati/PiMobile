@@ -76,8 +76,10 @@ public class SignInForm extends Form {
                     try {
                         User u = new User(username.getText(), email.getText(), password.getText());
           if( ServiceUser.getInstance().addUser(u))
-                            Dialog.show("Success","Connection accepted",new Command("OK"));
-                        else
+          {
+              Dialog.show("Success","Connection accepted",new Command("OK"));
+              new LoginForm(current).show();
+          }else
                             Dialog.show("ERROR", "Server error", new Command("OK"));
                     } catch (NumberFormatException e) {
                         Dialog.show("ERROR", "Errors", new Command("OK"));
