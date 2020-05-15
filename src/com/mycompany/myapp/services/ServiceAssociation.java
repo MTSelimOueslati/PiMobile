@@ -28,7 +28,7 @@ public class ServiceAssociation {
     public boolean resultOK;
     private ConnectionRequest req;
     
-    private ServiceAssociation() {
+    public ServiceAssociation() {
          req = new ConnectionRequest();
     }
 

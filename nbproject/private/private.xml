@@ -6,6 +6,8 @@
         <group>
             <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/MyApplication.java</file>
             <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/gui/SignInForm.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/gui/List1AssociationForm.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/services/ServiceAssociation.java</file>
             <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/gui/LoginForm.java</file>
             <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/services/ServiceUser.java</file>
             <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/gui/AssociationsManagement.java</file>

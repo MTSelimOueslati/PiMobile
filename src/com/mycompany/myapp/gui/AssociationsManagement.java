@@ -28,7 +28,7 @@ public class AssociationsManagement extends Form {
         Button btnList = new Button("List Associations");
 
         btnAdd.addActionListener(e-> new AddAssociationForm(current).show());
-        btnList.addActionListener(e-> new ListAssociationForm(current).show());
+        btnList.addActionListener(e-> new List1AssociationForm(current).show());
         getToolbar().addMaterialCommandToRightBar("", FontImage.MATERIAL_LOGOUT, e-> new LoginForm(current).show());
         addAll(btnAdd,btnList);
         
