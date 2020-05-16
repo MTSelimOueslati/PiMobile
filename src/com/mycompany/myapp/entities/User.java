@@ -15,6 +15,9 @@ public class User {
     private String username;
     private String email;
     private String password;
+    private String tel;
+    
+    
 
     public User() {
     }
@@ -68,10 +71,30 @@ public class User {
         this.password = password;
     }
 
+    public User(String username, String email, String password, String tel) {
+        this.id = id;
+        this.username = username;
+        this.email = email;
+        this.password = password;
+        this.tel = tel;
+    }
+
+    public String getTel() {
+        return tel;
+    }
+
+    public void setTel(String tel) {
+        this.tel = tel;
+    }
+
     @Override
     public String toString() {
-        return "User{" + "id=" + id + ", username=" + username + ", email=" + email + ", password=" + password + '}';
+        return "User{" + "id=" + id + ", username=" + username + ", email=" + email + ", password=" + password + ", tel=" + tel + '}';
     }
+
+
+
+    
     
     
     

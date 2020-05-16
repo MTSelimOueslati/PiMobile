@@ -43,7 +43,7 @@ public class ServiceUser {
     
     
         public boolean addUser(User u) {
-        String url = Statics.BASE_URL + "/esprit/tasks/newUser?username=" + u.getUsername() + "&email=" + u.getEmail() + "&password=" + u.getPassword();
+        String url = Statics.BASE_URL + "/esprit/tasks/newUser?username=" + u.getUsername() + "&email=" + u.getEmail() + "&password=" + u.getPassword()+"&tel="+u.getTel();
         req.setUrl(url);
         req.addResponseListener(new ActionListener<NetworkEvent>() {
             @Override

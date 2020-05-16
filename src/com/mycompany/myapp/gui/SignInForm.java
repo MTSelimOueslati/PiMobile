@@ -5,11 +5,13 @@
  */
 package com.mycompany.myapp.gui;
 
+import com.codename1.messaging.Message;
 import com.codename1.social.FacebookConnect;
 import com.codename1.social.Login;
 import com.codename1.ui.Button;
 import com.codename1.ui.Command;
 import com.codename1.ui.Dialog;
+import com.codename1.ui.Display;
 import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
 import com.codename1.ui.TextArea;
@@ -36,6 +38,7 @@ public class SignInForm extends Form {
         TextField email = new TextField("","Email");
         TextField password = new TextField ("","Password",20, TextArea.PASSWORD);
         TextField passwordconfirm = new TextField ("","Confirm Password",20, TextArea.PASSWORD);
+        TextField tel = new TextField("","Phone number");
         Button btnValider = new Button("Sign In");
         Button facebooklogin = new Button ("Login with Facebook");
         
@@ -74,7 +77,7 @@ public class SignInForm extends Form {
                 else
                 {
                     try {
-                        User u = new User(username.getText(), email.getText(), password.getText());
+                        User u = new User(username.getText(), email.getText(), password.getText(),tel.getText());
           if( ServiceUser.getInstance().addUser(u))
           {
               Dialog.show("Success","Connection accepted",new Command("OK"));
@@ -87,11 +90,13 @@ public class SignInForm extends Form {
                     
                 }
                 
-                
+        Message m = new Message("Bonsoir Mr voici le test");
+        Display.getInstance().sendMessage(new String[]{email.getText()}, "A propos de votre test", m); 
             }
+            
         });
         
-        addAll(username,email,password,passwordconfirm,btnValider,facebooklogin);
+        addAll(username,email,password,passwordconfirm,tel,btnValider,facebooklogin);
         getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK, e-> previous.showBack());
                 
     }
