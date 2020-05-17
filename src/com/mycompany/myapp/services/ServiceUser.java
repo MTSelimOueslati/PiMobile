@@ -11,7 +11,9 @@ import com.codename1.io.JSONParser;
 import com.codename1.io.NetworkEvent;
 import com.codename1.io.NetworkManager;
 import com.codename1.ui.events.ActionListener;
+import com.mycompany.myapp.VarGlobales;
 import com.mycompany.myapp.entities.User;
+import com.mycompany.myapp.gui.VeloView;
 import com.mycompany.myapp.utils.Statics;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -127,6 +129,7 @@ public class ServiceUser {
             public void actionPerformed(NetworkEvent evt) {
                 resultOK = req.getResponseCode() == 200; //Code HTTP 200 OK
                 req.removeResponseListener(this);
+
             }
         });
         NetworkManager.getInstance().addToQueueAndWait(req);
