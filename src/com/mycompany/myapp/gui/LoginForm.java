@@ -57,9 +57,6 @@ public class LoginForm extends Form{
                 new LoginForm(current).show();
             }else{
                 VarGlobales.setusername(username.getText());
-                
-
-                
                 new VeloView().getForm().show();
             }
             }

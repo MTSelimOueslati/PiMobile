@@ -66,7 +66,8 @@ imv.setImage(logo);
         tel.setAlignment(CENTER);
         Label dc = new Label (c.getLocation());
          dc.setAlignment(CENTER);
-        
+         Label dc1 = new Label (c.getWebsite());
+         dc1.setAlignment(CENTER);
          Label IDC = new Label (String.valueOf(c.getId()));
         IDC.setAlignment(CENTER);
          Label vide= new Label("");
@@ -82,7 +83,7 @@ imv.setImage(logo);
         add(c1);
         show();
         
-        l.addPointerPressedListener((evt) -> {Dialog.show("Details du Club", "Nom : "+l.getText()+ "\n Email : " +tel.getText()+"\n Date de creation :"+dc.getText(), "OK",null);
+        l.addPointerPressedListener((evt) -> {Dialog.show("Association details", "Name : "+l.getText()+ "\n Description : " +tel.getText()+"\n Location :"+dc.getText()+"\n Website :" + dc1.getText(), "OK",null);
         Form f2 = new Form("Ajout", BoxLayout.y())  ;
         Container c3 = new Container(new BoxLayout(BoxLayout.Y_AXIS));
                 TextField tf = new TextField("");
