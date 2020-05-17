@@ -26,6 +26,18 @@ public class BaseVelo {
         tb.addMaterialCommandToOverflowMenu("Logout", FontImage.MATERIAL_LOCK, (e)->{
             new LoginForm(form).show();
         });
+        
+        tb.addMaterialCommandToLeftSideMenu("Cart", FontImage.MATERIAL_ADD_SHOPPING_CART, (e)->{
+
+            new CartForm().show();
+            
+        });
+        
+        tb.addMaterialCommandToLeftSideMenu("Associations", FontImage.MATERIAL_MOTORCYCLE, (e)->{
+
+            new AssociationsManagement().show();
+            
+        });
     }
     
 }

@@ -29,9 +29,12 @@ public class AssociationsManagement extends Form {
 
         btnAdd.addActionListener(e-> new AddAssociationForm(current).show());
         btnList.addActionListener(e-> new List1AssociationForm(current).show());
-        getToolbar().addMaterialCommandToRightBar("", FontImage.MATERIAL_LOGOUT, e-> new LoginForm(current).show());
         addAll(btnAdd,btnList);
-        
+        getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK, (e)->{
+
+            VeloView ev = new VeloView(); 
+            ev.getForm().show();
+        });
         
     }
     

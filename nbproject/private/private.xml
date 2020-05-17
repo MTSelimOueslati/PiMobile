@@ -4,16 +4,33 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/MyApplication.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/gui/CartForm.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/utils/Statics.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/gui/ShowForm.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/gui/EditAssociationForm.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/gui/AddAssociationForm.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/services/ServiceOrder.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/gui/OrderForm.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/services/ServiceShoppingcart.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/VarGlobales.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/gui/BaseVelo.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/entities/Order.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/entities/Bill.java</file>
             <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/gui/SignInForm.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/gui/HomeForm.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/gui/OneVeloo.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/entities/Velovendre.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/entities/Shoppingcart.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/services/ServiceVelovendre.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/services/VeloService.java</file>
             <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/gui/List1AssociationForm.java</file>
-            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/services/ServiceAssociation.java</file>
-            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/entities/User.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/gui/AfficherForm.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/gui/VeloView.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/services/ServiceBill.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/MyApplication.java</file>
+            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/gui/ProductForm.java</file>
             <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/gui/LoginForm.java</file>
-            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/gui/List1Association.java</file>
-            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/services/ServiceUser.java</file>
             <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/gui/AssociationsManagement.java</file>
-            <file>file:/C:/Users/taieb/Documents/NetBeansProjects/PiMobile/src/com/mycompany/myapp/gui/ListAssociationForm.java</file>
         </group>
     </open-files>
 </project-private>
